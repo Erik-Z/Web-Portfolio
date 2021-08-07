@@ -27,8 +27,21 @@ const NavBar = () => {
                         Projects                        
                     </NavLink>
                 </nav>
-                <div>
-                    
+                <div className="inline-flex py-3 px-3 my-6">
+                    <SocialIcon 
+                        url="https://www.linkedin.com/in/erik-zhou-332b99154/"
+                        className="mr-3" 
+                        target="_blank" 
+                        fgColor="#fff" 
+                        style={{height: 35, width: 35}}
+                    />
+                    <SocialIcon 
+                        url="https://github.com/Erik-Z"
+                        className="mr-4" 
+                        target="_blank" 
+                        fgColor="#fff" 
+                        style={{height: 35, width: 35}}
+                    />
                 </div>
             </div>
         </header>
