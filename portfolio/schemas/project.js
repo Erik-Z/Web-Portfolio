@@ -12,6 +12,14 @@ export default {
             type: "datetime"
         },
         {
+            name: 'image',
+            title: 'Main image',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+          },
+        {
             name: "description",
             type: "text"
         },
