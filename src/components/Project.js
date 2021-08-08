@@ -49,27 +49,27 @@ const Project = () => {
                     //         <span></span>
                     //     </div>
                     // </article>
-                    
-                    <div class="sm:w-full">
-                        <div className="bg-white hover:shadow-xl shadow rounded-lg border">
-                        <img className="rounded-t-lg shadow h-60 w-full"src={project.image.asset.url} alt={project.image.alt}/>
-                            <div className="p-5 text-gray-600">
-                            <small className="text-sm font-semibold">{new Date(project.date).toLocaleDateString()}</small>
-                                <div className="text-gray-500 text-2xl font-thin">{project.title} </div>
-                                <p className="pt-1 text-gray-500 font-semibold">
-                                {project.description}
-                                </p>
-                                <hr />
-                                {project.tags && project.tags.map(tag => (
-                                    <div className=" text-xs inline-flex items-center font-bold  uppercase px-3 py-1 my-1 mr-1 rounded-full text-gray-700 border">
-                                    {tag}
-                                    </div>
+                    <a href={project.link} target="_blank">
+                        <div class="sm:w-full">
+                            <div className="bg-white hover:shadow-xl shadow rounded-lg border">
+                            <img className="rounded-t-lg shadow h-60 w-full"src={project.image.asset.url} alt={project.image.alt}/>
+                                <div className="p-5 text-gray-600">
+                                <small className="text-sm font-semibold">{new Date(project.date).toLocaleDateString()}</small>
+                                    <div className="text-gray-500 text-2xl font-thin">{project.title} </div>
+                                    <p className="pt-1 text-gray-500 font-semibold">
+                                    {project.description}
+                                    </p>
+                                    <hr />
+                                    {project.tags && project.tags.map(tag => (
+                                        <div className=" text-xs inline-flex items-center font-bold  uppercase px-3 py-1 my-1 mr-1 rounded-full text-gray-700 border">
+                                        {tag}
+                                        </div>
 
-                                ))}
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </a>
                 ))}
                 </section>
             </section>
