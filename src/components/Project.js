@@ -52,7 +52,7 @@ const Project = () => {
                     
                     <div class="sm:w-full">
                         <div className="bg-white hover:shadow-xl shadow rounded-lg border">
-                        <img className="rounded-t-lg shadow h-60 w-full"src={project.image.asset.url}/>
+                        <img className="rounded-t-lg shadow h-60 w-full"src={project.image.asset.url} alt={project.image.alt}/>
                             <div className="p-5 text-gray-600">
                             <small className="text-sm font-semibold">{new Date(project.date).toLocaleDateString()}</small>
                                 <div className="text-gray-500 text-2xl font-thin">{project.title} </div>
