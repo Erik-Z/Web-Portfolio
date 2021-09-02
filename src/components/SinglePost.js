@@ -33,10 +33,10 @@ const SinglePost = () => {
     if (!singlePost) return <div>Loading...</div>
     const options = {year: 'numeric', month: 'long', day: 'numeric'}
     return (
-        <main>
+        <main className="bg-blue-200 min-h-screen p-12">
             <article>
                 <div>
-                    <h1 className="font-bold text-xl text-gray-500 tracking-normal ml-10 mt-5">
+                    <h1 className="font-bold text-xl text-gray-500 tracking-normal ml-10">
                         {new Date(singlePost.publishedAt).toLocaleDateString(undefined, options)}
                     </h1>
                     <h1 className="font-bold text-5xl text-gray-800 tracking-normal ml-10">
@@ -47,7 +47,7 @@ const SinglePost = () => {
                     <img 
                         src={singlePost.mainImage.asset.url}
                         alt={singlePost.title} 
-                        className="w-full object-cover rounded p-10 mt-5"
+                        className="w-full object-cover rounded p-10 mt-10"
                     />
                     <div className="px-16 lg:px-48 lg:py-10 prose max-w-full">
                         <BlockContent blocks={singlePost.body} 

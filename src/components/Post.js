@@ -24,7 +24,7 @@ const Post = () => {
         .catch(console.error)
     })
     return (
-        <main className="bg-green-100 min-h-screen p-12">
+        <main className="bg-blue-200 min-h-screen">
             <section className="container mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
                     { postData && postData.map((post, index) => (
