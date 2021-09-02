@@ -49,7 +49,7 @@ const Project = () => {
                     //         <span></span>
                     //     </div>
                     // </article>
-                    <a href={project.link} target="_blank">
+                    <a href={project.link} target="_blank" rel="noreferrer">
                         <div class="sm:w-full">
                             <div className="bg-white hover:shadow-xl shadow rounded-lg border">
                             <img className="rounded-t-lg shadow h-60 w-full"src={project.image.asset.url} alt={project.image.alt}/>

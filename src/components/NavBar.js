@@ -26,6 +26,12 @@ const NavBar = () => {
                         className="inline-flex items-center py-6 px-3 mr-4 cursive text-4xl hover:text-white tracking-widest">
                         Projects                        
                     </NavLink>
+                    <NavLink 
+                        to="/posts" 
+                        activeClassName="text-red-100 bg-green-400"
+                        className="inline-flex items-center py-6 px-3 mr-4 cursive text-4xl hover:text-white tracking-widest">
+                        Blog                       
+                    </NavLink>
                 </nav>
                 <div className="inline-flex py-3 px-3 my-6">
                     <SocialIcon 
