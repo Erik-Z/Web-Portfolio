@@ -22,7 +22,7 @@ const Post = () => {
         `)
         .then((data) => {setPostData(data)})
         .catch(console.error)
-    })
+    }, [])
     return (
         <main className="bg-blue-200 min-h-screen">
             <section className="container mx-auto">

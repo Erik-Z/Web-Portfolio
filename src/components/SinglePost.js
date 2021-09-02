@@ -28,7 +28,7 @@ const SinglePost = () => {
         }`)
         .then((data) => setSinglePost(data[0]))
         .catch(console.error)
-    })
+    }, [])
 
     if (!singlePost) return <div>Loading...</div>
     const options = {year: 'numeric', month: 'long', day: 'numeric'}
